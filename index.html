@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descuentos</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h3 class="text-center">Calculadora de Descuentos</h2>
+        <form id="discountForm">
+            <div class="form-group">
+                <label for="product1">Producto 1</label>
+                <input type="number" class="form-control" id="product1" placeholder="Ingrese el valor del producto" required>
+            </div>
+            <div class="form-group">
+                <label for="product2">Producto 2</label>
+                <input type="number" class="form-control" id="product2" placeholder="Ingrese el valor del producto" required>
+            </div>
+            <div class="form-group">
+                <label for="product3">Producto 3</label>
+                <input type="number" class="form-control" id="product3" placeholder="Ingrese el valor del producto" required>
+            </div>
+            <div class="form-group">
+                <label for="product4">Producto 4</label>
+                <input type="number" class="form-control" id="product4" placeholder="Ingrese el valor del producto" required>
+            </div>
+            <div class="form-group">
+                <label for="product5">Producto 5</label>
+                <input type="number" class="form-control" id="product5" placeholder="Ingrese el valor del producto" required>
+            </div>
+            <div class="form-group">
+                <label for="subtotal">Subtotal</label>
+                <input type="text" class="form-control" id="subtotal" readonly>
+            </div>
+            <div class="form-group">
+                <label id="discountLabel" for="discount">Descuento 0%</label>
+                <input type="text" class="form-control" id="discount" readonly>
+            </div>
+            <div class="form-group">
+                <label for="total">Total a pagar</label>
+                <input type="text" class="form-control" id="total" readonly>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calculate()">Calcular</button>
+            <button type="reset" class="btn btn-secondary" onclick="clearFields()">Limpiar</button>
+        </form>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
